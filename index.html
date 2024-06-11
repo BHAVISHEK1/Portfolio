@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Yadav portfolio</title>
+  <!-- <link rel="stylesheet" href="./css/animation-classes.css" /> -->
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favi.jpeg" />
+  <script src="./js/animation.js" defer></script>
+  <script src="./js/color-mode.js" defer></script>
+  <script src="./js/project-slideshow.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/animation.css" />
+  <link rel="stylesheet" href="./css/color-mode.css" />
+</head>
+
+<body>
+  <div id="hero">
+    <h5>Hello I'm</h5>
+    <h1>Abhishek Yadav</h1>
+    <p>Fullstack Developer</p>
+
+    <!-- Block, Element, Modifier (BEM) naming convention-->
+    <div id="hero__animation">
+      <div id="hero__animation__img"></div>
+    </div>
+  </div>
+  <nav id="grid">
+    <div id="grid__tl">
+      <div id="grid__tl__btn">About</div>
+      <div id="grid__tl__content">
+        <div class="cards">
+
+
+
+          <div class="cards__content">
+            <article>
+              <img src="./assets/icons/th.jpeg" alt="Education icon" class="icon" />
+              <h2>Resume</h2>
+              <a href="assets/CVL_YadavAbhishek.pdf" download style="text-decoration: none;">
+                <p class="dwn">Download</p>
+              </a>
+            </article>
+          </div>
+
+
+
+
+
+          <div class="cards__content">
+            <article>
+              <img src="./assets/icons/experience.png" alt="Experience icon" class="icon" />
+              <h2>Experience</h2>
+              <p>
+                6 Months + <br />
+                Developer <br />
+                Experience
+              </p>
+            </article>
+            <!-- <p class="cards__content__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, architecto?
+              </p> -->
+          </div>
+          <div class="cards__content">
+            <article>
+              <img src="./assets/icons/education.png" alt="Education icon" class="icon" />
+              <h2>Education</h2>
+              <p>B. Sc. Information Technology</p>
+              <p>7.72 CGPA </p>
+            </article>
+            <!-- <p class="cards__content__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, architecto?
+              </p> -->
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div id="grid__tr">
+      <div id="grid__tr__btn">Experience</div>
+      <div id="grid__tr__content">
+        <div class="cards experience">
+          <article class="experience__skill">
+            <h2>Frontend Development</h2>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>HTML</h2>
+                <p>Experienced</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>CSS</h2>
+                <p>Experienced</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>JavaScript</h2>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>TypeScript</h2>
+                <p>Basic</p>
+              </div>
+            </div>
+          </article>
+          <article class="experience__skill">
+            <h2>Backend Development</h2>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>MySQL</h2>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>Node JS</h2>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>Express JS</h2>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>Git</h2>
+                <p>Basic</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div id="grid__bl">
+      <div id="grid__bl__btn">Projects</div>
+      <div id="grid__bl__content">
+        <div id="grid__bl__content__projects">
+
+          <div class="project p-1">
+            <img class="project__img project-1" src="assets/portfolio-projects/clinic.png" alt="Project 1" />
+            <h2 class="project__title">Clinic App</h2>
+            <button class="btn" onclick="window.location.href='https://dental-clinic-app.netlify.app/'">
+              Demo
+            </button>
+            <button class="btn" onclick="window.location.href='https://github.com/BHAVISHEK1/Clinic-App'">
+              GitHub
+            </button>
+          </div>
+
+
+
+
+
+
+
+          <div class="project p-2">
+            <img class="project__img project-2" src="assets/portfolio-projects/bookshelf.png" alt="Project 2" />
+            <h2 class="project__title"></h2>
+            <h2 class="project__title">My Bookshelf</h2>
+            <button class="btn" onclick="window.location.href='https://personal-bookshelfs.netlify.app/'">
+              Demo
+            </button>
+            <button class="btn" onclick="window.location.href='https://github.com/BHAVISHEK1/MyBookshelf'">
+              GitHub
+            </button>
+          </div>
+
+
+
+
+          <div class="project p-3">
+            <img class="project__img project-3" src="assets/portfolio-projects/webdoodler2.png" alt="Project 3" />
+            <h2 class="project__title">Chrome extension</h2>
+
+            <button class="btn"
+              onclick="window.location.href='https://github.com/BHAVISHEK1/WebDoodler_ChromeExtension'">
+              Demo
+            </button>
+            <button class="btn"
+              onclick="window.location.href='https://github.com/BHAVISHEK1/WebDoodler_ChromeExtension'">
+              GitHub
+            </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <button class="arrow" onclick="navigateProject(-1)">
+            &#10094;
+          </button>
+          <button class="arrow" onclick="navigateProject(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="grid__br">
+      <div id="grid__br__btn">Contact</div>
+      <div id="grid__br__content">
+        <h5 class="contact-text">Get In Touch</h5>
+        <h2 class="contact-text">Contact Me</h2>
+        <div>
+          <button class="btn btn-contact" onclick="window.location.href='https://mailto:ay7924252@gmail.com'">
+            Email
+          </button>
+          <button class="btn btn-contact"
+            onclick="window.location.href='https://www.linkedin.com/in/abhishek-yadav-908639280'">
+            LinkedIn
+          </button>
+          <button class="btn btn-contact" onclick="window.location.href='https://wa.link/psyhe7'">
+            WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="color-mode" style="background-color: rgb(93, 93, 93);">
+    <div id="toggle-button" class="icon" style="background-color: white; border-radius: 50px;">
+
+    </div>
+  </div>
+</body>
+
+</html>

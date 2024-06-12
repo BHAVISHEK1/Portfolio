@@ -353,6 +353,10 @@ blBtn.onclick = function () {
   }
 };
 
+
+
+
+
 brBtn.onclick = function () {
   if (activeCorner === "bottom-right") {
     playClosingAnimation("reverse-animate-bottom-right");

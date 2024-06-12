@@ -52,8 +52,11 @@ p {
 #hero__animation__img {
   background-image: var(--tl-1);
   height: 100%;
+  width: 160%;
   background-position: center;
   background-size: cover;
+  position: absolute;
+  right: 0%;
 }
 
 /* GRID COMMON STYLES */
@@ -259,6 +262,7 @@ article p {
   margin: auto auto 0.5rem;
   border: var(--border);
   background: var(--bg-alt);
+  
 }
 
 .project__img {

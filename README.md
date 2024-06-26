@@ -1,7 +1,3 @@
-Here's a polished README file for your portfolio project:
-
----
-
 # Abhishek Yadav's Portfolio
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio, showcasing my skills, projects, and experience.
@@ -44,18 +40,7 @@ To run this project locally:
 - `js/`: JavaScript files for interactive elements.
 - `index.html`: Main HTML file.
 
-## Contributing
-
-If you have suggestions or improvements, feel free to fork the repository and submit a pull request. 
-
-## License
-
-This project is licensed under the MIT License.
-
 ## Contact
 
-You can reach me at [abhishek@example.com](mailto:abhishek@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/abhishek-yadav).
+You can reach me at [ay7924252@gmail.com](mailto:ay7924252@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/abhishek-yadav).
 
----
-
-Feel free to customize this README further to better suit your needs!

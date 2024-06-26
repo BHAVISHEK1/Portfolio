@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek Yadav portfolio</title>
   <!-- <link rel="stylesheet" href="./css/animation-classes.css" /> -->
-  <link rel="icon" type="image/x-icon" href="./assets/icons/favi.jpeg" />
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
   <script src="./js/animation.js" defer></script>
   <script src="./js/color-mode.js" defer></script>
   <script src="./js/project-slideshow.js" defer></script>
@@ -17,6 +17,22 @@
 </head>
 
 <body>
+
+  <script>
+
+    window.addEventListener("click", ev => {
+       let ripple = document.createElement("div")
+       ripple.classList.add("ripple");
+       ripple.style.top = ev.clientY + "px";
+       ripple.style.left = ev.clientX + "px";
+       document.body.appendChild(ripple);
+       ripple.addEventListener("animationend",() => ripple.remove())
+    });
+
+    </script>
+
+
+
   <div id="hero">
     <h5>Hello I'm</h5>
     <h1>Abhishek Yadav</h1>
@@ -92,21 +108,10 @@
       <div id="grid__tr__content">
         <div class="cards experience">
           <article class="experience__skill">
+
             <h2>Frontend Development</h2>
-            <div>
-              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
-              <div>
-                <h2>HTML</h2>
-                <p>Experienced</p>
-              </div>
-            </div>
-            <div>
-              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
-              <div>
-                <h2>CSS</h2>
-                <p>Experienced</p>
-              </div>
-            </div>
+
+
             <div>
               <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
               <div>
@@ -114,44 +119,92 @@
                 <p>Intermediate</p>
               </div>
             </div>
+
             <div>
               <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
               <div>
-                <h2>TypeScript</h2>
-                <p>Basic</p>
+                <h2>React JS</h2>
+                <p>Intermediate</p>
               </div>
             </div>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>Java</h2>
+                <p>Experienced</p>
+              </div>
+            </div>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>HTML-CSS</h2>
+                <p>Experienced</p>
+              </div>
+            </div>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>Figma</h2>
+                <p>Intermediate</p>
+              </div>
+            </div>
+
+            
+
+            
+
           </article>
+
           <article class="experience__skill">
+
             <h2>Backend Development</h2>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>MongoDB</h2>
+                <p>Intermediate</p>
+              </div>
+            </div>
+
             <div>
               <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
               <div>
                 <h2>MySQL</h2>
-                <p>Basic</p>
-              </div>
-            </div>
-            <div>
-              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
-              <div>
-                <h2>Node JS</h2>
                 <p>Intermediate</p>
               </div>
             </div>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>NodeJS</h2>
+                <p>Experienced</p>
+              </div>
+            </div>
+
             <div>
               <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
               <div>
                 <h2>Express JS</h2>
-                <p>Intermediate</p>
-              </div>
-            </div>
-            <div>
-              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
-              <div>
-                <h2>Git</h2>
                 <p>Basic</p>
               </div>
             </div>
+
+            <div>
+              <img src="./assets/icons/checkmark.png" alt="Checkmark icon" class="icon" />
+              <div>
+                <h2>GitHub</h2>
+                <p>Basic</p>
+              </div>
+            </div>
+
+
+
+            
           </article>
         </div>
       </div>
@@ -199,11 +252,43 @@
             <h2 class="project__title">Chrome extension</h2>
 
             <button class="btn"
-              onclick="window.location.href='https://github.com/BHAVISHEK1/WebDoodler_ChromeExtension'">
+              onclick="window.location.href='https://chromewebstore.google.com/detail/webpage-doodler/lbodekjfnafmhkbaegjapfimodhppepa'">
               Demo
             </button>
             <button class="btn"
               onclick="window.location.href='https://github.com/BHAVISHEK1/WebDoodler_ChromeExtension'">
+              GitHub
+            </button>
+          </div>
+
+
+
+          <div class="project p-3">
+            <img class="project__img project-3" src="assets/portfolio-projects/trackspend.png" alt="Project 3" />
+            <h2 class="project__title">Money Tracker</h2>
+
+            <button class="btn"
+              onclick="window.location.href='https://track-as-u-spend.netlify.app/'">
+              Demo
+            </button>
+            <button class="btn"
+              onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
+              GitHub
+            </button>
+          </div>
+
+
+
+          <div class="project p-3">
+            <img class="project__img project-3" src="assets/portfolio-projects/sign.png" alt="Project 3" />
+            <h2 class="project__title">Sign Scraper</h2>
+
+            <button class="btn"
+              onclick="window.location.href='https://signscraper.netlify.app/'">
+              Demo
+            </button>
+            <button class="btn"
+              onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
               GitHub
             </button>
           </div>
@@ -236,14 +321,14 @@
         <h5 class="contact-text">Get In Touch</h5>
         <h2 class="contact-text">Contact Me</h2>
         <div>
-          <button class="btn btn-contact" onclick="window.location.href='https://mailto:ay7924252@gmail.com'">
+          <button style="border: 4px solid red;"  class="btn btn-contact" onclick="window.location.href='https://mailto:ay7924252@gmail.com'">
             Email
           </button>
-          <button class="btn btn-contact"
+          <button style="border: 4px solid rgb(65, 125, 237);" class="btn btn-contact"
             onclick="window.location.href='https://www.linkedin.com/in/abhishek-yadav-908639280'">
             LinkedIn
           </button>
-          <button class="btn btn-contact" onclick="window.location.href='https://wa.link/psyhe7'">
+          <button style="border: 4px solid rgb(18, 192, 119);" class="btn btn-contact" onclick="window.location.href='https://wa.link/psyhe7'">
             WhatsApp
           </button>
         </div>

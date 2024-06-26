@@ -43,15 +43,17 @@ p {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  height: 25rem;
-  width: 25rem;
+  height: 15rem;
+  width: 30rem;
   max-height: 100vh;
   max-width: 100vw;
+  
 }
 
 #hero__animation__img {
   background-image: var(--tl-1);
   height: 100%;
+  transform: translateX(-35px);
   background-position: center;
   background-size: cover;
 }

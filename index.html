@@ -18,18 +18,58 @@
 
 <body>
 
+  <div id="cat"></div>
+
   <script>
 
+    // Ripple
     window.addEventListener("click", ev => {
-       let ripple = document.createElement("div")
-       ripple.classList.add("ripple");
-       ripple.style.top = ev.clientY + "px";
-       ripple.style.left = ev.clientX + "px";
-       document.body.appendChild(ripple);
-       ripple.addEventListener("animationend",() => ripple.remove())
+      let ripple = document.createElement("div")
+      ripple.classList.add("ripple");
+      ripple.style.top = ev.clientY + "px";
+      ripple.style.left = ev.clientX + "px";
+      document.body.appendChild(ripple);
+      ripple.addEventListener("animationend", () => ripple.remove())
     });
 
-    </script>
+
+    // cat
+    const cat = document.getElementById('cat');
+    const runningGif = './assets/cat/running-run.gif';
+    const staticImage = './assets/cat/catani1.png';
+    document.addEventListener('click', function (event) {
+      const clickX = event.clientX;
+      const clickY = event.clientY;
+
+      const catRect = cat.getBoundingClientRect();
+      const catX = catRect.left + catRect.width / 2;
+      const catY = catRect.top + catRect.height / 2;
+
+      const directionX = clickX - catX;
+      const directionY = clickY - catY;
+
+      const angle = Math.atan2(directionY, directionX);
+
+      const angleDegrees = angle * (180 / Math.PI);
+
+      cat.style.transform = `translate(-50%, -50%) rotate(${angleDegrees}deg) scaleX(-1)`; // Flip horizontally to match initial orientation
+
+      cat.style.backgroundImage = `url(${runningGif})`;
+      moveCat(clickX, clickY, angleDegrees);
+    });
+
+    function moveCat(x, y, angleDegrees) {
+
+      cat.style.left = (x - 50) + 'px';
+      cat.style.top = (y - 50) + 'px';
+
+      setTimeout(() => {
+        cat.style.backgroundImage = `url(${staticImage})`;
+        cat.style.transform = `translate(-50%, -50%) rotate(${angleDegrees}deg) scaleX(-1)`; // Keep the same rotation
+      }, 1000);
+    }
+
+  </script>
 
 
 
@@ -37,6 +77,10 @@
     <h5>Hello I'm</h5>
     <h1>Abhishek Yadav</h1>
     <p>Fullstack Developer</p>
+
+
+
+
 
     <!-- Block, Element, Modifier (BEM) naming convention-->
     <div id="hero__animation">
@@ -49,8 +93,6 @@
       <div id="grid__tl__content">
         <div class="cards">
 
-
-
           <div class="cards__content">
             <article>
               <img src="./assets/icons/th.jpeg" alt="Education icon" class="icon" />
@@ -60,10 +102,6 @@
               </a>
             </article>
           </div>
-
-
-
-
 
           <div class="cards__content">
             <article>
@@ -75,10 +113,7 @@
                 Experience
               </p>
             </article>
-            <!-- <p class="cards__content__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, architecto?
-              </p> -->
+          
           </div>
           <div class="cards__content">
             <article>
@@ -87,18 +122,8 @@
               <p>B. Sc. Information Technology</p>
               <p>7.72 CGPA </p>
             </article>
-            <!-- <p class="cards__content__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, architecto?
-              </p> -->
+            
           </div>
-
-
-
-
-
-
-
 
         </div>
       </div>
@@ -152,9 +177,9 @@
               </div>
             </div>
 
-            
 
-            
+
+
 
           </article>
 
@@ -204,7 +229,7 @@
 
 
 
-            
+
           </article>
         </div>
       </div>
@@ -267,12 +292,10 @@
             <img class="project__img project-3" src="assets/portfolio-projects/trackspend.png" alt="Project 3" />
             <h2 class="project__title">Money Tracker</h2>
 
-            <button class="btn"
-              onclick="window.location.href='https://track-as-u-spend.netlify.app/'">
+            <button class="btn" onclick="window.location.href='https://track-as-u-spend.netlify.app/'">
               Demo
             </button>
-            <button class="btn"
-              onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
+            <button class="btn" onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
               GitHub
             </button>
           </div>
@@ -283,25 +306,13 @@
             <img class="project__img project-3" src="assets/portfolio-projects/sign.png" alt="Project 3" />
             <h2 class="project__title">Sign Scraper</h2>
 
-            <button class="btn"
-              onclick="window.location.href='https://signscraper.netlify.app/'">
+            <button class="btn" onclick="window.location.href='https://signscraper.netlify.app/'">
               Demo
             </button>
-            <button class="btn"
-              onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
+            <button class="btn" onclick="window.location.href='https://github.com/BHAVISHEK1/mini_projects'">
               GitHub
             </button>
           </div>
-
-
-
-
-
-
-
-
-
-
 
           <button class="arrow" onclick="navigateProject(-1)">
             &#10094;
@@ -313,22 +324,22 @@
 
 
 
-
-
     <div id="grid__br">
       <div id="grid__br__btn">Contact</div>
       <div id="grid__br__content">
         <h5 class="contact-text">Get In Touch</h5>
         <h2 class="contact-text">Contact Me</h2>
         <div>
-          <button style="border: 4px solid red;"  class="btn btn-contact" onclick="window.location.href='https://mailto:ay7924252@gmail.com'">
+          <button style="border: 4px solid red;" class="btn btn-contact"
+            onclick="window.location.href='https://mailto:ay7924252@gmail.com'">
             Email
           </button>
           <button style="border: 4px solid rgb(65, 125, 237);" class="btn btn-contact"
             onclick="window.location.href='https://www.linkedin.com/in/abhishek-yadav-908639280'">
             LinkedIn
           </button>
-          <button style="border: 4px solid rgb(18, 192, 119);" class="btn btn-contact" onclick="window.location.href='https://wa.link/psyhe7'">
+          <button style="border: 4px solid rgb(18, 192, 119);" class="btn btn-contact"
+            onclick="window.location.href='https://wa.link/psyhe7'">
             WhatsApp
           </button>
         </div>

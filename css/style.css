@@ -1,6 +1,8 @@
 /* CUSTOM FONT */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
 
 /* GENERAL */
 
@@ -27,6 +29,24 @@ p {
   margin: 0 0.5rem;
   
 }
+
+/* CAT */
+
+#cat {
+  width: 70px;
+  height:70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  pointer-events: none; 
+  transition: top 2s, left 2s;
+}
+
+
 
 /* HERO */
 
@@ -128,16 +148,19 @@ p {
   top: -11.5rem;
   left: -11.5rem;
   transform: rotate(-45deg);
+
 }
 
 #grid__tl__content {
-  width: 30vw;
+  width: 20vw;
   top: 10vh;
   left: 0;
+ 
   transform: translateX(-100vw) translateY(-100vh);
 }
 
 article {
+  
   background: rgb(245, 245, 245);
   font-size: 0.8rem;
   list-style: none;
@@ -184,12 +207,14 @@ article p {
   top: -11.5rem;
   right: -11.5rem;
   transform: rotate(45deg);
+  
 }
 
 #grid__tr__content {
   width: 30vw;
   top: 10vh;
   right: 0;
+  
   transform: translateX(100vw) translateY(-100vh);
 }
 
@@ -197,7 +222,9 @@ article p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: .6rem;
+  
+  
 }
 
 .experience__skill {

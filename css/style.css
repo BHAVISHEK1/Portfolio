@@ -33,17 +33,19 @@ p {
 /* CAT */
 
 #cat {
-  width: 70px;
-  height:70px;
+  width: 90px;
+  height:90px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: -100px;
-  left: -100px;
+  top: 100px;
+  left: 100px;
   pointer-events: none; 
   transition: top 2s, left 2s;
+  transform: translate(-50%, -50%);
+  background-image: url('./assets/cat/static.png'); 
 }
 
 
